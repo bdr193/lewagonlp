@@ -1,0 +1,209 @@
+/* ELEMENTS */
+
+html,
+body
+	margin 0
+	padding 0
+
+html
+	box-sizing border-box
+	font-size 10px
+
+*,
+*:before,
+*:after
+	box-sizing inherit
+	
+body
+	background-color color__bg
+	color color__text
+	font-family font__text
+	font-size fz
+	letter-spacing -0.025em
+	line-height fz__lh
+	overflow-x hidden
+	
+img
+	display block
+	height auto
+	max-width 100%
+	
+a
+	color inherit
+	text-decoration none
+	transition color 0.2s ease
+	
+	&:hover
+		color: color__hover
+
+p 
+	margin-bottom 1em
+	margin-top 1em
+
+ul,
+ol
+	list-style none
+	margin 0
+	padding 0
+
+figure
+	margin 0
+
+
+/* Typography */
+
+b
+	font-weight 600
+	
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	color color__title
+	font-family font__title
+	letter-spacing -0.025em
+	
+	a
+		&:hover
+			color color__hover
+	
+h1,
+.h1
+	font-size h1
+	font-weight 800
+	line-height h1__lh
+	margin 1em 0
+	
+h2,
+.h2
+	font-size h2
+	font-weight 500
+	line-height h2__lh
+	
+	br
+		display none
+		
+	@media (min-width screen-md-min)
+		
+		br
+			display block
+	
+h3,
+.h3
+	font-size h3
+	font-weight 700
+	line-height h3__lh
+	margin-bottom 20px
+	margin-top 20px
+	
+h4,
+.h4
+	font-size h4
+	font-weight 300
+	line-height h4__lh
+	margin-bottom 20px
+	margin-top 20px
+	
+h5,
+.h5
+	font-size h5
+	line-height h5__lh
+	margin-bottom h5__margin
+	margin-top h5__margin
+h6,
+.h6
+	font-size h6
+	font-weight bold
+	line-height h6__lh
+	margin-bottom h6__margin
+	margin-top h6__margin
+	
+
+.text-justify
+	text-align justify
+	
+.text-center
+	text-align center
+	
+.text-left
+	text-align left
+
+.text-right
+	text-align right
+
+.text-selected
+	color color__brand2
+	display inline-block
+	position relative
+	z-index 1
+	
+	&:before
+		background-color lighten(color__brand2, 90%)
+		bottom 0.078125em
+		content ''
+		height auto
+		left -0.109375em
+		position absolute
+		right -0.234375em
+		top -0.015625em
+		width auto
+		z-index -1
+	
+	&--secondary
+		color color__brand1
+		
+		&:before
+			background-color lighten(color__brand1, 90%)
+		
+
+/* hidden & visible blocks */
+
+.hide
+	display none
+
+.show
+	display block
+
+.hide-md
+	display block
+	
+	@media (min-width screen-md-min)
+		display none
+		
+.show-md
+	display none
+	
+	@media (min-width screen-md-min)
+		display block
+		
+.hide-lg
+	display block
+	
+	@media (min-width screen-lg-min)
+		display none
+		
+.show-lg
+	display none
+	
+	@media (min-width screen-lg-min)
+		display block
+		
+.hide-xl
+	display block
+	
+	@media (min-width screen-xl-min)
+		display none
+		
+.show-xl
+	display none
+	
+	@media (min-width screen-xl-min)
+		display block
+		
+
+/* colors */
+
+.color__brand1
+	color color__brand1 !important

@@ -1,0 +1,88 @@
+.page-block
+	padding-bottom 50px
+	padding-top 50px
+	
+	&__header
+		padding-bottom 14px
+		
+		&--about-us
+			text-align left
+		
+		&--cards
+			padding-bottom 40px
+	
+	&__main
+		
+		&--cards
+			padding-bottom 50px
+			padding-top 50px
+			position relative
+			
+			&:before
+				background-color color__bg-section
+				bottom 0
+				content ''
+				left 0
+				position absolute
+				top 0
+				width 100%
+				z-index -1	
+
+			@media (min-width screen-lg-min)
+				padding-bottom 1px
+				padding-top 61px
+	
+				&:before
+					bottom 62px
+
+	&__title
+		margin 0
+		font-family font__title
+		font-size 34px
+		line-height 1.141265em
+		font-weight 800
+		letter-spacing -0.025em
+		
+		@media (min-width screen-md-min)
+			font-size 54px
+
+		@media (min-width screen-xl-min)
+			font-size 64px
+
+	&--contact-form
+		background-color color__bg-section
+		color color__text
+		text-align center
+		
+		@media (min-width screen-md-min)
+			padding-bottom 33px
+			padding-top 27px
+
+	&--footer-form
+		background-color color__bg-section
+		color color__text
+		text-align center
+		
+		@media (min-width screen-md-min)
+			padding-bottom 51px
+			padding-top 51px
+		
+	&--cards
+		padding-bottom 0
+		padding-top 0
+		
+		@media (min-width screen-md-min)
+			padding-bottom 36px
+	
+	&--articles
+		background-color rgba(255,255,255,0.63)
+		
+		@media (min-width screen-md-min)
+			padding-bottom 120px
+			padding-top 93px
+	
+	&--about-us
+		
+		@media (min-width screen-md-min)
+			padding-bottom 104px
+			padding-top 83px

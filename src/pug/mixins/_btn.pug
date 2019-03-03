@@ -1,0 +1,7 @@
+mixin btn(text, url, modificators)
+	- var btnClass = "btn"
+	if modificators
+		each modificator, index in modificators
+			- btnClass += " btn--" + modificator
+
+	a(class=btnClass, href="#")= text

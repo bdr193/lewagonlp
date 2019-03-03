@@ -1,0 +1,61 @@
+.form
+	
+	&__desc
+		color inherit
+		font-size 27px
+		font-weight 600
+		letter-spacing -0.03em
+		line-height 1.2em
+		margin 0
+		padding-bottom 26px
+		
+		&--footer
+			padding-bottom 17px
+
+		&--secondary
+			font-size 27px
+			font-weight 400
+			line-height 1.2em
+			padding-bottom 36px
+	
+	&__field
+		height 100%
+	
+	&__input
+		background-color color__light
+		border none
+		display block
+		font-family font__text
+		font-size 17px
+		height 100%
+		letter-spacing -0.025em
+		line-height 1.2em
+		padding 12px 17px
+		width 100%
+		+placeholder()
+			color #767676
+			opacity 1
+			
+		&:focus
+			+placeholder()
+				opacity 0
+	
+	&__submit
+		background-color color__brand2
+		border none
+		border-radius 5px
+		color color__light
+		cursor pointer
+		display block
+		font-family font__text
+		font-size 20px
+		font-weight 600
+		height 100%
+		letter-spacing -0.025em
+		line-height 1.2em
+		padding 12px 17px 9px
+		transition background-color 0.2s ease
+		width 100%
+		
+		&:hover
+			background-color darken(color__brand2, 20%)

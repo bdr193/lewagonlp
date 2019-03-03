@@ -1,0 +1,28 @@
+.site__main(id="main-content")
+
+	.page-block.page-block--contact-form
+		.site__width.site__width--thin
+			include ../../components/_form
+
+	.page-block.page-block--about-us
+		.site__width
+			.page-block__header.page-block__header--about-us
+				h2.page-block__title Experience our coding <br>bootcamp in <span class="text-selected">Tel Aviv</span>
+			.page-block__main
+				include ../../components/_block-about-us
+
+	.page-block.page-block--cards
+			.page-block__header.page-block__header--cards 
+				.site__width
+					h2.page-block__title.text-center The <span class="text-selected text-selected--secondary">No.1</span> coding bootcamp
+			.page-block__main.page-block__main--cards 
+				.site__width
+					include ../../components/_block-cards
+
+	.page-block.page-block--articles
+		.site__width.site__width--wide
+			include ../../components/_block-articles
+
+	.page-block.page-block--footer-form
+		.site__width.site__width--thin
+			include ../../components/_form-footer

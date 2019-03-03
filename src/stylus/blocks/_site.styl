@@ -1,0 +1,45 @@
+.site
+	position relative
+	
+	&__header
+		width 100%
+
+	&__width
+		max-width 100%
+		padding-left 2rem
+		padding-right 2rem
+		width 100%
+		
+		@media (min-width screen-sm-min)
+			margin-left auto
+			margin-right auto
+			max-width 95%
+			padding-left 0
+			padding-right 0
+			width main_width
+
+		&--thin
+
+			@media (min-width screen-sm-min)
+				width main_width-thin
+
+		&--wide
+
+			@media (min-width screen-sm-min)
+				width main_width-wide
+
+		&--fullwidth
+
+			@media (min-width screen-sm-min)
+				max-width 100%
+				width 100%
+			
+	&__wrapper
+		overflow hidden
+		width 100%
+		
+	&__main-bg
+		background-image url(../img/main-bg.jpg)
+		background-position 50% 50%
+		background-repeat no-repeat
+		background-size cover
